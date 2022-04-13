@@ -1,0 +1,25 @@
+.main-title {
+    font-size: 38px;
+    line-height: 46px;
+    text-align: center;
+    color: #FFFFFF;
+    padding-top: 111px;
+    width: 315px;
+    margin: auto;
+}
+@media screen and (min-width: 768px) {
+    .main-title {
+        width: auto;
+        padding-top: 276px;
+    }
+}
+@media screen and (min-width: 1024px) {
+    .main-title {
+        padding-top: 223px;
+    }
+}
+@media screen and (min-width: 1440px) {
+    .main-title {
+        padding-top: 240px;
+    }
+}

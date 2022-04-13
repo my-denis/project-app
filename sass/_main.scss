@@ -1,0 +1,47 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+.body {
+    font-family: 'montserrat' , 'Arial' , sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    background-color: $main-collored;
+    font-size: 20px;
+    position: relative;
+}
+.container {
+    max-width: 1380px;
+    min-width: 375px;
+    margin: 0 auto;
+    padding: 0 30px;
+}
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+.img-responsive {
+    width: 100%;
+    height: auto;
+}
+a {
+    text-decoration: none;
+}
+@media screen and (min-width: 768px) {
+    .container {
+        padding: 0 60px;
+    }
+}
+@media screen and (min-width: 1440px) {
+    .container {
+        padding: 0 30px;
+    }
+}

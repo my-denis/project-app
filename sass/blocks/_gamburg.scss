@@ -1,0 +1,165 @@
+.header {
+        &__nav {
+            position: relative;
+        }
+        &__link-wrapper {
+            position: fixed;
+            left: 8px;
+            right: 8px;
+            background-color: white;
+            border-radius: 12px 12px 0px 0px;
+            height: 350px;
+            bottom: 0;
+            padding: 0;
+            display: none;
+            flex-direction: column;
+        }
+        &__u-list {
+            margin-top: 20px;
+            list-style: none;
+            align-self: center;
+            text-align: center;
+            padding: 0;
+        }
+
+        &__button-close {
+            background-image: url(../img/close-button.svg);
+            border: 0;
+            background-color: transparent;
+            width: 32px;
+            height: 32px;
+            margin-top: 12px;
+            margin-right: 12px;
+            align-self: flex-end;
+            cursor: pointer;
+        }
+        &__link {
+            display: inline-block;
+            vertical-align: top;
+            color: $active-regular;
+            font-size: 24px;
+            line-height: 29px;
+            background-color: $grey-bg;
+            border-radius: 12px;
+            margin-bottom: 15px;
+            padding: 7px 0;
+            width: 90vw; 
+            margin-top: 0;
+            &--active {
+                color: $accent;
+            }
+        }
+        &__link:active {
+            background-color: $grey-separator;
+        }
+        &__link-last {
+            margin-bottom: 12px;
+        } 
+        &__gamburger {
+            border: none;
+            background-image: url(../img/hamburger.svg);
+            background-color: transparent;
+            width: 32px;
+            height: 32px;
+            background-repeat: no-repeat;
+            cursor: pointer;
+            &--about {
+                background-image: url(../img/hamburger-about.svg);
+            }
+        }
+        &__gamburger:active {
+            background-color: $grey-separator;
+            border-radius: 8px;
+        }  
+}
+@media screen and (min-width: 768px) {
+    .header {
+        &__gamburger {
+            display: none;
+        }
+        &__button-close {
+            display: none;
+        }
+        &__link-wrapper {
+            position: static;
+            background-color: transparent;
+            border-radius: none;
+            height: none;
+            bottom: 0;
+            padding: 0;
+            flex-direction: none;
+            display: block;
+            height: auto;
+        }
+        &__u-list {
+            display: flex;
+            justify-content: flex-start;
+            margin-top: 0;
+        }
+        &__link {
+            display:inline;
+            margin-right: 15px;
+            font-size: 16px;
+            line-height: 20px;
+            text-align: right;
+            color: #FFFFFF;
+            background-color: transparent;
+            width: auto;
+            padding-bottom: 3px;
+            margin-bottom: 0;
+            &:hover {
+                border-bottom: 2px solid $active-regular;
+                border-radius: 0;
+                color: $active-regular;
+            }
+            &-last {
+                margin: 0;
+            }
+            &--about {
+                color: $active-regular;
+            }
+        }
+        &__link--active {
+            color: $accent;
+            border-bottom: 2px solid $accent;
+            border-radius: 0;
+        }
+        &__button-close {
+            background-image: url(../img/close-button.svg);
+            border: 0;
+            background-color: transparent;
+            width: 32px;
+            height: 32px;
+            margin: 12px;
+            align-self: flex-end;
+            cursor: pointer;
+        }
+        &__gamburger {
+            display: none;
+        }
+        &__button-close {
+            display: none;
+        }
+        &__nav {
+            margin: 0;
+        }
+        
+    }
+}
+@media screen and (min-width: 1024px) {
+    .header {
+        &__u-list {
+            align-self: flex-start;
+            justify-self: flex-end;
+        }
+        &__nav{
+            grid-column: 2 / 3;
+            justify-self: flex-end;
+            align-self: flex-start;
+            margin: 0 -15px;
+        }
+        &__first-line {
+            margin: 0 -45px;
+        }
+    }
+}

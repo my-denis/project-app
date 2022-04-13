@@ -1,0 +1,28 @@
+.main {
+    &__team {
+        &-swipe {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+        }
+        &-button {
+            cursor: pointer;
+            font-size: 0;
+            border: none;
+            background-color: #24A3FF;
+            opacity: 0.2;
+            width: 16px;
+            height: 16px;
+            border-radius: 50%;
+            &--active {
+                background-color: #24A3FF;
+                opacity: 1;
+            }
+            margin: 0 7px;
+        }
+        &-button:hover {
+            opacity: 0.6;
+        }
+    }
+}

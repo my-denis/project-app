@@ -1,0 +1,26 @@
+.border {
+    position: relative;
+    margin-bottom: 50px;
+    &__first {
+        position: absolute;
+        height: 10px;
+        background: #CACADB;
+        border-radius: 0px 0px 12px 12px;
+        left: 20px;
+        right: 20px;
+    }
+    &__second {
+        position: absolute;
+        height: 10px;
+        background: #E7E7F2;;
+        border-radius: 0px 0px 12px 12px;
+        left: 40px;
+        right: 40px;
+        top: 10px;
+    }
+}
+@media screen and (min-width: 768px) {
+    .border {
+        margin-bottom: 80px;
+    }
+}

@@ -1,0 +1,27 @@
+.slick-dots {
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    padding: 0;
+    & button {
+        border-radius: 50%;
+        font-size: 0;
+        padding: 8px;
+        background-color: #D3EDFF;
+        border: transparent;
+        margin: 0 7px;
+        &:hover {
+            background-color: $active-regular;
+            opacity: 0.6 ;
+        }
+    }
+
+}
+.slick-active {
+    & button {
+    background-color: $active-regular;
+    }
+}
+.slick-initialized .slick-slide {
+    display: flex;
+}
